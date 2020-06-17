@@ -108,6 +108,8 @@ Turning red on<span class="token operator">!</span>
 Busy
 </code></pre>
 <p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/avail.jpg" alt="Available"><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/busy.jpg" alt="Busy"></p>
+<h2 id="coming-soon">Coming Soon</h2>
+<p>Next I will be working on an enclosure to mount this outside my door.  Stay tuned.</p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Wes Wiley</strong> - <em>Initial work</em> - <a href="https://github.com/wewiley">Wes Wiley</a></li>
