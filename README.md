@@ -99,7 +99,7 @@ Turning red on<span class="token operator">!</span>
 Busy
 </code></pre>
 <p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_avail.jpg" alt="Available"><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_busy.jpg" alt="Busy"></p>
-<h2 id="coming-soon">Coming Soon</h2>
+<h2 id="update">Update</h2>
 <p>Using TinkerCad, I developed a switch plate cover for a dual gang electrical box and lens to secure the pixel ring.  In the files directory you will find two sets of STL files.</p>
 <ul>
 <li>Dual Gang Plate_v2.stl (Switch plate which can be printed with any material in any color.  Your slicer may add supports in the recessed ring.  I printed this with PLA and 20% infill and it turned out great)</li>
