@@ -104,7 +104,7 @@ Busy
 <ul>
 <li>Dual Gang Plate_v2.stl (Switch plate which can be printed with any material in any color.  Your slicer may add supports in the recessed ring.  I printed this with PLA and 20% infill and it turned out great)</li>
 <li>Round Lens v3.stl (This is a lens that presses into the recessed ring on the switch plate and functions as a diffuser.  I would recommend printing this with a semi transparent white filament like PETG @ 20% infill.  Supports will likely fill the inside of the lens however those can be removed.<br>
-<img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/plate_lens.jpg" alt="Switch plate"></li>
+<img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/plate_lens.jpg" alt="Switch plate and lens"><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/plate_lens_assembled.jpg" alt="Assembled"></li>
 </ul>
 <h2 id="authors">Authors</h2>
 <ul>
