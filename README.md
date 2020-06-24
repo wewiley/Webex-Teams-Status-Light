@@ -100,7 +100,12 @@ Busy
 </code></pre>
 <p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_avail.jpg" alt="Available"><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_busy.jpg" alt="Busy"></p>
 <h2 id="coming-soon">Coming Soon</h2>
-<p>Next I will be working on an enclosure to mount this outside my door.  Stay tuned.</p>
+<p>Using TinkerCad, I developed a switch plate cover for a dual gang electrical box and lens to secure the pixel ring.  In the files directory you will find two sets of STL files.</p>
+<ul>
+<li>Dual Gang Plate_v2.stl (Switch plate which can be printed with any material in any color.  Your slicer may add supports in the recessed ring.  I printed this with PLA and 20% infill and it turned out great)</li>
+<li>Round Lens v3.stl (This is a lens that presses into the recessed ring on the switch plate and functions as a diffuser.  I would recommend printing this with a semi transparent white filament like PETG @ 20% infill.  Supports will likely fill the inside of the lens however those can be removed.<br>
+<img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/switch_plate.jpg" alt="Switch plate"><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/lensjpg" alt="lens"></li>
+</ul>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Wes Wiley</strong> - <em>Initial work</em> - <a href="https://github.com/wewiley">Wes Wiley</a></li>
