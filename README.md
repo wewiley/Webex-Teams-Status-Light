@@ -106,7 +106,7 @@ Busy
 <li><strong>Wes Wiley</strong> - <em>Initial work</em> - <a href="https://github.com/wewiley">Wes Wiley</a></li>
 </ul>
 <h2 id="license">License</h2>
-<p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details</p>
+<p>This project is licensed under the MIT License.</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <ul>
 <li>Inspiration from <a href="https://github.com/matthewf01">matthewf01</a> <a href="https://github.com/matthewf01/Webex-Teams-Status-Box">Webex-Teams-Status-Box</a></li>
