@@ -36,7 +36,7 @@ Now that the wires are soldered to the pixel ring, we can connect everything tog
 - Black wire (ground) from pixel ring to Raspberry Pi pin 6.
 - Green wire (data) from pixel ring to Raspbery Pi GPIO 12..
 </code></pre>
-<p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_wiring.jpg" alt="Image of wiring"></p>
+<p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/wiring.jpg" alt="Image of wiring"></p>
 <h2 id="software-requirements">Software Requirements</h2>
 <p>This will assume that you have the Raspian OS installed and running on the Raspberry Pi.  The next step will be to install all of the required packages.</p>
 <p>Open Terminal and run these commands to install all of the necessary packages:</p>
