@@ -11,10 +11,8 @@
 <p>These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Hardware:</p>
-<pre><code>- Raspberry Pi 4 running Raspian
+<pre><code>- Raspberry Pi  running Raspian
 - LED Pixel Ring (https://www.amazon.com/gp/product/B0105VMWRM/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&amp;psc=1)
-- 5v power supply
-- Breadboard
 - Jumper wires
 - Soldering equipment 
 </code></pre>
@@ -24,28 +22,21 @@
 <p>This may seem daunting to some, but when you break it down, its really not too bad.  In lieu of soldering, you could use alligator clips for prototyping</p>
 <h4 id="v-power">5v Power</h4>
 <p>There are many ways to power the pixel ring… direct from Pi, using a power supply, etc.  More information on that here <a href="https://learn.adafruit.com/neopixels-on-raspberry-pi">https://learn.adafruit.com/neopixels-on-raspberry-pi</a>.</p>
-<p>I chose to take an old USB Micro cable, cut the micro end off to expose the wires, and then used the Red and Black wires for my 5v (Red) and Ground (Black).  I crimped on some male Dupont connectors to make them easier to work with later.</p>
+<p>I chose to wire directly to the Raspberry Pi GPIO header.</p>
 <h4 id="pixel-wiring">Pixel Wiring</h4>
-<p>This is where the soldering comes in.  You need to solder three wires to the pixel ring.  I used some male to male jumper wires I had laying around, clipped one end of each and soldered  the following:</p>
+<p>This is where the soldering comes in.  You need to solder three wires to the pixel ring.  I used some male to female jumper wires I had laying around, clipped e male end of each and soldered  the following:</p>
 <pre><code>- Red wire to Power 5v DC
 - Black Wire to Power Signal Ground
 - Green Wire to Data Input
 </code></pre>
 <p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/IMG_8908.jpg" alt="Image of pixel ring"><br>
-Now that the wires are soldered to the pixel ring, we can connect everything together.  Whether you choose to wire these directly, use a prototype board or breadboard, do whatever you feel comfortable with.  I chose to use a bread board because that was what I had on hand.  Since I am using an external power supply, in order for the Pi to be able to control the pixels, the Pi and pixel ring must share a ground with the power supply.  Simply pick one of the Ground GPIO pins for the Pi.  In my case, I used pin 9.<br>
-<img src="https://www.raspberrypi.org/documentation/usage/gpio/images/GPIO-Pinout-Diagram-2.png" alt="Image of GPIO pins on Pi"></p>
-<pre><code>- Red wire (positive) from power supply to + column on bread board.
-- Black wire (ground) from power supply to - column on bread board.
-- Red wire (positive) from pixel ring to same + column on bread board.
-- Black wire (ground) from pixel ring to same - column on bread board.
-- Female to male jumper wire (color of your choice, I used green) from -column on bread board to ground pin on Pi, GPIO pin 9.
+Now that the wires are soldered to the pixel ring, we can connect everything together.  For the pixel ring to work correctly, we need to choose a GPIO pin that supports PWM, in my case GPIO 12.<br>
+<img src="https://i.stack.imgur.com/yHddo.png" alt="Image of GPIO pins on Pi"></p>
+<pre><code>- Red wire (positive) from pixel ring to Raspberry Pi pin 2 or 4.
+- Black wire (ground) from pixel ring to Raspberry Pi pin 6.
+- Green wire (data) from pixel ring to Raspbery Pi GPIO 12..
 </code></pre>
-<p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/IMG_9879.jpg" alt="Image of bread board"><br>
-Now since the pixel ring uses PWM, we must also use a GPIO pin that is PWM capable (GPIO 18 or 12 / pins 12 or 32).  For my example, I used GPIO 12.</p>
-<pre><code>- Female jumper wire from GPIO 12 to Data Input on Pixel Ring.
-</code></pre>
-<p>In the end, this is what my entire wiring project looks like.</p>
-<p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/IMG_4816.jpg" alt="Image of completed wiring"></p>
+<p><img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/zero_wiring.jpg" alt="Image of wiring"></p>
 <h2 id="software-requirements">Software Requirements</h2>
 <p>This will assume that you have the Raspian OS installed and running on the Raspberry Pi.  The next step will be to install all of the required packages.</p>
 <p>Open Terminal and run these commands to install all of the necessary packages:</p>
