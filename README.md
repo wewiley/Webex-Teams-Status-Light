@@ -24,7 +24,7 @@
 <p>There are many ways to power the pixel ring… direct from Pi, using a power supply, etc.  More information on that here <a href="https://learn.adafruit.com/neopixels-on-raspberry-pi">https://learn.adafruit.com/neopixels-on-raspberry-pi</a>.</p>
 <p>I chose to wire directly to the Raspberry Pi GPIO header.</p>
 <h4 id="pixel-wiring">Pixel Wiring</h4>
-<p>This is where the soldering comes in.  You need to solder three wires to the pixel ring.  I used some male to female jumper wires I had laying around, clipped e male end of each and soldered  the following:</p>
+<p>This is where the soldering comes in.  You need to solder three wires to the pixel ring.  I used some male to female jumper wires I had laying around, clipped the male end of each and soldered  the following:</p>
 <pre><code>- Red wire to Power 5v DC
 - Black Wire to Power Signal Ground
 - Green Wire to Data Input
