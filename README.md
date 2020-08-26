@@ -1,6 +1,5 @@
 ---
-
-
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wewiley/WebexTeamsStatusLight)
 ---
 
 <h1 id="webex-teams-status-light">Webex Teams Status Light</h1>
