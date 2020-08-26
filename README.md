@@ -67,10 +67,27 @@ pixels <span class="token operator">=</span> neopixel<span class="token punctuat
 </code></pre>
 <p>In order for the pixels to work, we must execute the code with sudo.  If the pixel lights up, then your wiring is correct.</p>
 <h2 id="getting-ready-for-the-big-show">Getting Ready for the Big Show</h2>
-<p>Before you can execute the main part of this project and light up the pixels based on your status, you need to do a few things:</p>
+<p>Before you can execute the main part of this project and light up the pixels based on your status, you need to do a few things.</p>
 <ul>
-<li>You need an authorization token to access the Webex Teams API’s.  For testing purposes, you can get a 12hr token, but for production use, I would suggest using a bot access token.  All of this can be found at <a href="https://developer.webex.com/docs/api/getting-started">https://developer.webex.com/docs/api/getting-started</a>.  Copy down your access token:</li>
-<li>In order for the API to know which person’s status you want to view, the API needs the PersonID.  You can find your own PersonID by running this GET example: <a href="https://developer.webex.com/docs/api/v1/people/get-my-own-details">https://developer.webex.com/docs/api/v1/people/get-my-own-details</a>.  Copy your id.</li>
+<li>Create a Webex Bot</li>
+<li>Obtain your Webex Teams PersonId.</li>
+</ul>
+<h3 id="create-a-webex-bot">Create a Webex Bot</h3>
+<ul>
+<li>Sign in to <a href="https://developer.webex.com">https://developer.webex.com</a></li>
+<li>Click My Webex Apps and click Create a New App</li>
+<li>Select Create a Bot</li>
+<li>Complete the Bot Name, Icon, Bot Username and Description fields and then click Add Bot.</li>
+<li>Once complete, copy the Bot ID and Bot Access Token and save them somewhere for safe keeping.<br>
+<img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/bot_id.png" alt="Bot Token"><br>
+<img src="https://github.com/wewiley/WebexTeamsStatusLight/blob/master/photos/bot_token.png" alt="Bot ID"></li>
+</ul>
+<h3 id="obtain-your-webex-teams-personid">Obtain Your Webex Teams PersonID</h3>
+<ul>
+<li>Go to <a href="https://developer.webex.com/docs/api/v1/people/get-my-own-details">https://developer.webex.com/docs/api/v1/people/get-my-own-details</a> and sign in with your Webex Teams username and password.</li>
+<li>Click Run on the right hand side.</li>
+<li>From the API Response window, the very first line is “id.”</li>
+<li>Copy the text in green to the right of “id:”</li>
 </ul>
 <p>Using your text editor, open <a href="http://config.py">config.py</a> and enter the information you just retrieved making sure to leave the “” on each and then save the file.</p>
 <pre><code>access_token = "your bot access token"
