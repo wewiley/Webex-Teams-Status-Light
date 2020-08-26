@@ -1,5 +1,5 @@
 ---
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wewiley/WebexTeamsStatusLight)
+
 ---
 
 <h1 id="webex-teams-status-light">Webex Teams Status Light</h1>
@@ -132,4 +132,4 @@ Busy
 <ul>
 <li>Inspiration from <a href="https://github.com/matthewf01">matthewf01</a> <a href="https://github.com/matthewf01/Webex-Teams-Status-Box">Webex-Teams-Status-Box</a></li>
 </ul>
-
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/wewiley/WebexTeamsStatusLight)
