@@ -1,5 +1,6 @@
 ---
 
+
 ---
 
 <h1 id="webex-teams-status-light">Webex Teams Status Light</h1>
@@ -124,7 +125,8 @@ Busy
 </ul>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><strong>Wes Wiley</strong> - <em>Initial work</em> - <a href="https://github.com/wewiley">Wes Wiley</a></li>
+<li><strong>Wes Wiley</strong> - <em>Initial work</em> - <a href="https://github.com/wewiley">Wes Wiley</a><br>
+<a href="https://developer.cisco.com/codeexchange/github/repo/wewiley/WebexTeamsStatusLight"><img src="https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg" alt="published"></a></li>
 </ul>
 <h2 id="license">License</h2>
 <p>This project is licensed under the MIT License.</p>
@@ -132,3 +134,4 @@ Busy
 <ul>
 <li>Inspiration from <a href="https://github.com/matthewf01">matthewf01</a> <a href="https://github.com/matthewf01/Webex-Teams-Status-Box">Webex-Teams-Status-Box</a></li>
 </ul>
+
