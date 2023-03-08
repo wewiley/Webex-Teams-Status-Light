@@ -1,0 +1,94 @@
+import machine, neopixel
+import time
+import network
+from machine import Pin
+import urequests
+import ujson
+
+#Webex BOT access token and personID
+access_token = "Bearer ACCESS TOKEN FROM developer.webex.com"
+person = "PERSON ID OF PERSON WHOS STATUS YOU WANT TO QUERY"
+
+#sta_if = network.WLAN(network.STA_IF); sta_if.active(True)
+#sta_if.connect("<IOT_Devices", "<TurnMe0n!>") # Connect to an AP
+#sta_if.isconnected()                      # Check for successful connection
+
+#define the neopixel object by GPIO pin and number of pixels
+p = 23
+n = 16
+pixels = neopixel.NeoPixel(machine.Pin(p), n)
+
+#Webex Teams API Tokens
+#api = WebexTeamsAPI(access_token)
+
+#Color functions
+def red_on():
+    for i in range(n):
+        pixels[i] = (255, 0, 0)
+        pixels.write()
+    print ("Turning red on")
+    return
+    
+
+def green_on():
+    for i in range(n):
+        pixels[i] = (0, 255, 0)
+        pixels.write()
+    print ("Turning green on")
+    return
+
+def blue_on():
+    for i in range(n):
+        pixels[i] = (0, 0, 255)
+        pixels.write()
+    print ("Turning blue on")
+    return
+
+def clear():
+    for i in range(n):
+        pixels[i] = (0, 0, 0)
+        pixels.write()
+    print ("Clearing")
+    return
+
+#Main function that checks the status of the person via the Webex Teams People API
+#and set's the color of the neopixel based on status.
+def check_status():
+    url = "https://webexapis.com/v1/people/"+person
+    payload={}
+    headers = {
+    'Accept': "application/json",
+    'Authorization': access_token,
+    }
+    response = urequests.get(url, headers=headers, data=payload)
+    #print(response.text)
+    response_data = response.json()
+    status = response_data['status']
+    #print(status)
+
+    if status == "active":
+        print ("He's active! GREEN")
+        green_on()
+    elif status == "call":
+        print ("On a call!")
+        red_on()
+    elif status == "inactive":
+        print ("Inactive")
+        blue_on()
+    else:
+        #DND, In a meeting, Presenting, etc.
+        red_on()
+        print ("Busy")
+
+# Calls the check_status function every 5 seconds.  Important note that any less than 5
+# seconds will result in rate limiting by the API.
+try:
+    while True:
+        check_status()
+        time.sleep(5)
+        print ("Slept for 5 seconds")
+
+         
+except KeyboardInterrupt:
+   print ("Interrupted")
+   clear()
